@@ -21,7 +21,7 @@ function getSortList(movies, query) {
 export const App = () => {
   const [query, setQuery] = useState('');
 
-  const visibbleMovies = getSortList(moviesFromServer, query);
+  const visibleMovies = getSortList(moviesFromServer, query);
 
   return (
     <div className="page">
@@ -45,7 +45,7 @@ export const App = () => {
           </div>
         </div>
 
-        <MoviesList movies={visibbleMovies} />
+        <MoviesList movies={visibleMovies} />
       </div>
 
       <div className="sidebar">Sidebar goes here</div>
